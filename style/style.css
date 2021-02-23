@@ -1,0 +1,279 @@
+/*Main page*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+   background-color: #0D1821;
+}
+.sidenav a{
+    text-decoration: none;
+}
+.type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bot button{
+    
+    margin-top: 5vh;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: inset 0 0 0 4px #344966;
+    color: #B4CDED;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+}
+.bot button::before,.bot button::after{
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+.bot button::before{
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+}
+.bot button::after{
+    border-top-width: 4px;
+  border-right-width: 4px;
+}
+.bot button:hover{
+    color: #BFCC94;
+}
+.bot button:hover::before,.bot button:hover::after{
+    border-color: #BFCC94;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+.bot button:hover::before{
+    transition-delay: 0s, 0s, 0.25s;
+}
+.bot button:hover::after{
+    transition-delay: 0s, 0.25s, 0s;
+}
+.btn{
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 3vw monospace;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+  display: flex;
+  align-items: center;
+}
+.btn:focus{
+    outline: none;
+}
+
+.type h1{
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; 
+    border-right: .20em solid rgb(255, 255, 255); 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255) }
+  }
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #344966;
+    overflow: hidden;
+    padding-top: 30px;
+    transition: 0.5s;
+}
+
+.sidenav .menu{
+    padding: 8px 8px 8px 32px;
+    width: fit-content;
+    height: 20px;
+    margin: 5vh 0px ;
+    text-decoration: none;
+    font-size: 25px;
+    color: #F0F4EF;
+    display: block;
+    font-family: sans-serif;
+    transition: 0.3s;
+}
+.sidenav .menu:hover{
+    box-shadow:  0 0 1em rgba(50,50,50,0.9);
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.social{
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    margin-left: 80px;
+    
+
+}
+.social img{
+    padding: 10px;
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.sidebox{
+    position: fixed;
+    background-color: #344966;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    transition: .5s;
+}
+.sidebox:before{
+    border-radius:50%;
+    background: white;
+    transition: .5s;
+}
+.sidebox:hover:before{
+    box-shadow: 0 0 15px white;
+    filter: blur(3px);
+}
+.sidebox:hover{
+    box-shadow: 0 0 1.5vw #BFCC94;
+}
+
+
+.sidebox img{
+    margin: 5px 0px;
+    max-width: 35px;
+    max-height: 35px;
+}
+.sidebox img:hover,.sidenav img:hover{
+    -webkit-filter: drop-shadow(2px 2px 2px #222);
+    filter: drop-shadow(2px 2px 2px #222);
+}
+.logo-2{
+    margin: 0px 0px 0px 30px;
+    min-width: 50px;
+    min-height: 50px;
+    width: 60%;
+    height: 15%;
+}
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 40px;
+    font-family: sans-serif;
+    margin-left: 50px;
+    color: #111;
+}
+h1,h2{
+    text-align: center;
+    color: #F0F4EF;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px 60px;
+}
+.hello{
+    margin-left: 10vw;
+    font-size: 5vw;
+}
+h2{
+    margin-top: 35Vh;
+    font-size: 3vw;
+}
+/*Experiences page*/
+
+/*Time line*/
+.timeline{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 50px;
+    
+    flex-direction: column;
+}
+.newdate{
+    margin-bottom:1vw;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 30vh;
+}
+.newdate .container{
+    display: grid;
+    width: 50%;
+    grid-template-columns: 50% 50%;
+    grid-auto-flow: row;
+    word-break: normal;
+    height: 100%;
+}
+.newdate .cont{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    margin-bottom: 5vw;
+    margin-top: 30px;
+    font-family: monospace;
+}
+.newdate .img{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    
+    color: #BFCC94;
+    font-size: 3vw;
+}
+.body{
+    color:#F0F4EF;
+    font-size: 1.7vw;
+}
+.newdate img{
+    border: solid 1px black;
+    height: 12vw;
+    width: 12vw;
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 2vw #BFCC94;
+    
+}
+@media(max-width:570px){
+    .newdate .container{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+}
+/*
+https://codepen.io/Stockin/pen/XPvpoB
+*/

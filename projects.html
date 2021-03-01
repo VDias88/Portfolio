@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olá!</title>
+    <link rel="stylesheet" href="style/style.css">
+    
+    <link rel="icon" type="imagem/png" href="imgs/Logo-1.png">
+</head>
+<body>
+    <div class="sidebox" style="cursor:pointer" onclick="openNav()">
+        <img src="imgs/Logo-1.png" alt="">
+    </div>
+    <div class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href=""><img class="logo-2" src="imgs/Logo-2.png" alt="">
+        </a>
+        <a class="menu" href="index.html">Home</a>
+        <a class="menu" href="experience.html">Experiência</a>
+        <a class="menu" href="">Projetos</a>
+        <a class="menu" href="">Sobre</a>
+        <div class="social">
+            <a class="img" href="https://github.com/VDias88">
+                <img src="imgs/logotipo-do-github.png" alt="">
+            </a>
+            <a class="img" href="https://www.linkedin.com/in/vinicius-monteiro-dias-a7484a1b9/">
+            <img src="imgs/linkedin.png" alt="">
+        </div>
+        </a>  
+    </div>
+<div class="cards">
+    <div class="pcard" href="javascript:void(0)" onclick="showModal(this)">
+        <img src="imgs/java_app.png" alt="">
+        <div class="ctext">
+            <div class="ctitle">Mark-1</div>
+            <div class="cbody">Java swing, POO</div>
+        </div>
+    </div>
+    <div class="modal-box" style="display: none;">
+        <div class="modal-header">
+            <div class="slider">
+                <div class="s-content">
+                    <img  src="imgs/Port-2.png" style="display: flex;" alt="">
+                </div>
+                <div class="s-controlls" style="visibility: hidden;">
+                    <div class="s-prev" >&lt&lt</div>
+                    <div class="s-next" >>></div>
+                
+                </div>
+            </div>
+            <span class="close-modal" onclick="closeModal(this)">&times;</span>
+        </div>
+        <div class="modal-body">
+            <div class="body-text"><p class="mtitle">Mark-1</p>Programa feito com java swing e os conceitos de programação orientada a objeto, além de um bancod de dados básico, tudo com o objetivo de organizar e gerenciar pequenos comércios.</div>
+        </div>
+    </div>
+
+    <div class="pcard" href="javascript:void(0)" onclick="showModal(this)">
+        <img src="imgs/first_site.png" alt="">
+        <div class="ctext">
+            <div class="ctitle">Primeiro site</div>
+            <div class="cbody">HTML, CSS, Js</div>
+        </div>
+    </div>
+    <div class="modal-box" style="display: none;">
+        <div class="modal-header">
+            <div class="slider">
+                <div class="s-content">
+                    <img  src="imgs/Port-3.png" style="display: flex;" alt="">
+                </div>
+                <div class="s-controlls" style="visibility: hidden;">
+                    <div class="s-prev" >&lt&lt</div>
+                    <div class="s-next" >>></div>
+                
+                </div>
+            </div>
+            <span class="close-modal" onclick="closeModal(this)">&times;</span>
+        </div>
+        <div class="modal-body">
+            <div class="body-text"><p class="mtitle">Primeiro site</p>Feito para pratica, com objetivo de clonar Google.</div>
+        </div>
+    </div>
+
+    <div class="pcard" href="javascript:void(0)" onclick="showModal(this)">
+        <img src="imgs/form_site.png" alt="">
+        <div class="ctext">
+            <div class="ctitle">Login site</div>
+            <div class="cbody">HTML, CSS, Js</div>
+        </div>
+    </div>
+    <div class="modal-box" style="display: none;">
+        <div class="modal-header">
+            <div class="slider">
+                <div class="s-content">
+                    <img src="imgs/form_site.png" alt="">
+                    
+                </div>
+                <div class="s-controlls" style="visibility: hidden;">
+                    <div class="s-prev">&lt&lt</div>
+                    <div class="s-next">>></div>
+            </div>
+            </div>
+            <span class="close-modal" onclick="closeModal(this)">&times;</span>
+        </div>   
+        <div class="modal-body">
+            <div class="body-text"><p class="mtitle">Login</p>Site básico de login, usando métodos diferentes para aprendizado.</div>
+        </div>
+    </div>
+
+    <div class="pcard" href="javascript:void(0)" onclick="showModal(this)">
+        <img src="imgs/Galeria.png" alt="">
+        <div class="ctext">
+            <div class="ctitle">Galería</div>
+            <div class="cbody">HTML, CSS, Js</div>
+        </div>
+    </div>
+    <div class="modal-box" style="display: none;">
+        <div class="modal-header">
+            <div class="slider">
+                <div class="s-content">
+                    <img src="imgs/Galeria.png" alt="">
+                </div>
+                <div class="s-controlls" style="visibility: hidden;">
+                    <div class="s-prev">&lt&lt</div>
+                    <div class="s-next">>></div>
+            </div>
+            </div>
+            <span class="close-modal" onclick="closeModal(this)">&times;</span>
+        </div>   
+        <div class="modal-body">
+            <div class="body-text"><p class="mtitle">Galería de mídia</p>Site de prática, usando métodos como grid-box, flex-box.</div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="scripts/script.js"></script>
+</html>

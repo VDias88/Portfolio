@@ -164,7 +164,7 @@ body{
     filter: blur(3px);
 }
 .sidebox:hover{
-    box-shadow: 0 0 1.5vw #BFCC94;
+    box-shadow: 0 0 15px #BFCC94;
 }
 
 
@@ -265,7 +265,7 @@ h2{
     min-height: 100px;
     border-radius: 10px;
     border-radius: 50%;
-    box-shadow: 0 0 2vw #BFCC94;
+    box-shadow: 0 0 20px #BFCC94;
     
 }
 @media(max-width:570px){
@@ -274,6 +274,179 @@ h2{
         grid-template-rows: 50% 50%;
     }
 }
+/*Projects page*/
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    margin-left: 50px;
+    margin-top: 20px;
+    min-height: 0;
+    min-width: 0;
+    padding: 0 5vw ;
+    row-gap: 3vw;
+    column-gap: 0;
+}
+
+.cards .pcard{
+    display: flex;
+    background-color: #344966;
+    flex-direction: column;
+    width: 50vh;
+    height: 40vh;
+    align-items: center;
+    transition: .5s;
+    cursor: pointer;
+}
+.pcard .ctitle{
+    font-size: 3vw;
+    color: #F0F4EF;
+}
+.pcard .ctext{
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    align-items: center;
+    margin-top: 1vh;
+    margin-bottom: 10px;
+}
+.pcard .cbody{
+    color: #BFCC94;
+    font-size: 2vw;
+}
+.pcard:before{
+    background: white;
+    transition: .5s;
+}
+.pcard:hover:before{
+    box-shadow: 0 0 15px white;
+    filter: blur(3px);
+}
+.pcard:hover{
+    box-shadow: 0 0 15px #BFCC94;
+}
+.pcard img{
+    height: 200px;
+    width: 100%;
+    min-width: 100px;
+    min-height: 100px;
+}
 /*
-https://codepen.io/Stockin/pen/XPvpoB
+inspiration
+https://christyschott.github.io/portfolio.github.io/
 */
+@media(max-width:1200px){
+    .cards{
+        grid-template-columns: 50% 50%;
+    }
+}
+@media(max-width:865px){
+    .cards{
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+}
+@media(max-width:488px){
+    .cards .pcard{
+        width: 55vw;
+        height: 40vw;
+    }
+}
+.modal-box{
+    position: fixed;
+    grid-template-rows: 60% 40% ;
+    justify-content: center;
+    row-gap: 2vw;
+    left: 0;
+    top: 0;
+    overflow-y:auto;
+    
+    margin: 10px;
+    height: 100%;
+    width: 60%;
+    /*width*/
+    background-color: #F0F4EF;
+    padding: 3vw;
+}
+.modal-header{ 
+    width: 100%;
+}
+.modal-body{
+    text-align: center;
+    width: 100%;
+    
+}
+.modal-box img{
+    height: 50%;
+    width: 100%;
+    min-width: 100px;
+    min-height: 100px;
+    
+}
+.close-modal{
+    top: 0;
+    right: 0;
+    margin: 2vw 35% 0 0;
+
+    color: black;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 40px;
+    position: fixed;
+    z-index: 10;
+}
+.close-modal:hover{
+    color: #344966;
+}
+.body-text{
+    font-size: 2vw;
+    font-family: monospace;
+}
+.mtitle{
+    font-family: monospace;
+    font-size: 3vw;
+    color: #344966;
+}
+/*slider*/
+.slider{
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.s-controlls{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+.s-controlls div{
+    font-family: monospace;
+    color: black;
+    font-weight: 900;
+    font-size: 5vh;
+    margin: 0 5vw;
+}
+.s-controlls div:hover{
+    cursor: pointer;
+    color: #344966;
+}
+.s-content img{
+    width: 90%;
+    height: 100%;
+}
+.s-content{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+}
+@media(max-width:500px){
+    .s-content{
+       width: 100%; 
+    }
+}

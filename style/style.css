@@ -395,14 +395,7 @@ https://christyschott.github.io/portfolio.github.io/
     position: fixed;
     z-index: 10;
 }
-@media(max-width:490px){
-    .close-modal{
-        margin: 2vw 15% 0 0;
-    }
-    .modal-box{
-        width: 80%;
-    }
-}
+
 .close-modal:hover{
     color: #344966;
 }
@@ -451,6 +444,14 @@ https://christyschott.github.io/portfolio.github.io/
     align-items: center;
     height: 100%;
     width: 70%;
+}
+@media(max-width:490px){
+    .close-modal{
+        margin: 2vw 15% 0 0;
+    }
+    .modal-box{
+        width: 80%;
+    }
 }
 @media(max-width:500px){
     .s-content{

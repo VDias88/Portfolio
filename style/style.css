@@ -332,10 +332,7 @@ h2{
     min-width: 100px;
     min-height: 100px;
 }
-/*
-inspiration
-https://christyschott.github.io/portfolio.github.io/
-*/
+
 @media(max-width:1200px){
     .cards{
         grid-template-columns: 50% 50%;
@@ -458,3 +455,59 @@ https://christyschott.github.io/portfolio.github.io/
        width: 100%; 
     }
 }
+/*About page*/
+
+.about-t{
+    margin-left: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-h img{
+    border: solid 10px #344966;
+    height: 12vw;
+    width: 12vw;
+    min-width: 100px;
+    min-height: 100px; 
+    border-radius: 50%;
+}
+.about-b{
+    margin-top: 3vw;
+    width: 90%;
+    height: 50%;
+    font-size: 2.5vw;
+    font-family: monospace;
+    color: #BFCC94;
+    text-align: center;
+}
+.about-f{
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 2vw;
+}
+.about-l{
+    display: flex;
+    margin-bottom: 30px;
+}
+.git{
+    background-color: #344966;
+}
+.lkdr{
+    background-color: black;
+}
+.about-f img{
+    margin: 0 30px;
+    border: solid 1vw #344966;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.about-f img:hover{
+    border: solid 1vw #0D1821;
+    -webkit-filter: drop-shadow(2px 2px 2px #344966);
+    filter: drop-shadow(2px 2px 2px #344966);
+}
+

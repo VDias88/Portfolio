@@ -1,27 +1,23 @@
-//fechar e abrir navegação
+
 function openNav() {
     document.getElementsByClassName('sidenav')[0].style.width = "250px";
-  }
-  
-  function closeNav() {
+    
+}  
+function closeNav() {
     document.getElementsByClassName('sidenav')[0].style.width = "0";
-  }
-
-
-//modal boxes
-
-//adicionando funçaõ de clique em cada modal
-
-function showModal(e){
- //funçao que ao ser ativada mostra model box
- e.nextElementSibling.style.display='grid';
 }
-
-function closeModal(e){
-  //funçao que ao ser ativada mostra model box
+function showModal(e){
+  e.nextElementSibling.style.display='grid';
   
+}
+function closeModal(e){
   e.parentNode.parentNode.style.display='none';
- }
+}
+var glid=new Glide ('.glide',{
+  type:'slider',
+  perView:1,
 
-//glider
+}).mount()
+
+
 

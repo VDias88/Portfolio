@@ -13,11 +13,5 @@ function showModal(e){
 function closeModal(e){
   e.parentNode.parentNode.style.display='none';
 }
-var glid=new Glide ('.glide',{
-  type:'slider',
-  perView:1,
-
-}).mount()
-
 
 
